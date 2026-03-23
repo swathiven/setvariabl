@@ -1,0 +1,29 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "SetActivityExercise",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"cn": "data",
+					"fold": "output",
+					"filename": "products.csv"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 1,
+				"startTime": "2026-03-24T21:23:00",
+				"timeZone": "E. Australia Standard Time"
+			}
+		}
+	}
+}
